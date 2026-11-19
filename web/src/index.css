@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-slide-up: slide-up 0.25s ease-out;
+
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+  }
+}
